@@ -7,6 +7,12 @@
 
 import UIKit
 
-class ResultViewController: NSObject {
+class ResultViewController: UIViewController {
 
+    @IBOutlet weak var resultLabelValue: UILabel!
+    
+    
+    
+    @IBAction func homeButtonPressed(_ sender: UIButton) {
+    }
 }
