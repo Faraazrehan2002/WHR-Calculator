@@ -24,6 +24,9 @@ class ResultViewController: UIViewController {
     
 
     @IBAction func homeButtonPressed(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
     
