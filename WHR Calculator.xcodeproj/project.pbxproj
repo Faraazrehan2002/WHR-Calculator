@@ -13,7 +13,7 @@
 		E8FC0CA32C8BA8E200C1EE79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8FC0CA22C8BA8E200C1EE79 /* Base */; };
 		E8FC0CA52C8BA8E400C1EE79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FC0CA42C8BA8E400C1EE79 /* Assets.xcassets */; };
 		E8FC0CA82C8BA8E400C1EE79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8FC0CA72C8BA8E400C1EE79 /* Base */; };
-		E8FC0CB12C8BB42100C1EE79 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FC0CB02C8BB42100C1EE79 /* ResultViewController.swift */; };
+		E8FC0CB32C8BC30F00C1EE79 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FC0CB22C8BC30F00C1EE79 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		E8FC0CA42C8BA8E400C1EE79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8FC0CA72C8BA8E400C1EE79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8FC0CA92C8BA8E400C1EE79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8FC0CB02C8BB42100C1EE79 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E8FC0CB22C8BC30F00C1EE79 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				E8FC0C9F2C8BA8E200C1EE79 /* CalculateViewController.swift */,
-				E8FC0CB02C8BB42100C1EE79 /* ResultViewController.swift */,
+				E8FC0CB22C8BC30F00C1EE79 /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 				E8FC0CA02C8BA8E200C1EE79 /* CalculateViewController.swift in Sources */,
 				E8FC0C9C2C8BA8E200C1EE79 /* AppDelegate.swift in Sources */,
 				E8FC0C9E2C8BA8E200C1EE79 /* SceneDelegate.swift in Sources */,
-				E8FC0CB12C8BB42100C1EE79 /* ResultViewController.swift in Sources */,
+				E8FC0CB32C8BC30F00C1EE79 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

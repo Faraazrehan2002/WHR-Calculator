@@ -47,6 +47,18 @@ class CalculateViewController: UIViewController {
         
         whrValue = String(format: "%1.1f", whr)
         
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+        
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult"{
+            
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.whrValue = whrValue
+            
+        }
     }
     
 }

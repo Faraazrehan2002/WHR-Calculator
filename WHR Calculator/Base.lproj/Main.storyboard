@@ -93,7 +93,7 @@
                         <outlet property="hipValueSlider" destination="f1J-oL-if8" id="FYb-8j-90Z"/>
                         <outlet property="waistLabelValue" destination="4wa-ay-o4N" id="m38-nh-SFO"/>
                         <outlet property="waistValueSlider" destination="xKH-2x-9f8" id="q5c-64-mY9"/>
-                        <segue destination="6L2-6m-56I" kind="presentation" id="zSo-C3-pPm"/>
+                        <segue destination="rQ1-zk-XWP" kind="presentation" identifier="goToResult" id="hHh-1U-zGY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -101,29 +101,29 @@
             <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
         <!--Result View Controller-->
-        <scene sceneID="hwj-8v-Gg0">
+        <scene sceneID="Oag-jt-MhP">
             <objects>
-                <viewController id="6L2-6m-56I" customClass="ResultViewController" customModule="WHR_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hEJ-tA-8AT">
+                <viewController id="rQ1-zk-XWP" customClass="ResultViewController" customModule="WHR_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1rV-Lu-zZs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Waist to Hip Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S81-gI-e40">
-                                <rect key="frame" x="30" y="143" width="317" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waist to Hip Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMK-Qu-t2k">
+                                <rect key="frame" x="73" y="137" width="247" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuR-lp-RWs">
-                                <rect key="frame" x="167" y="432" width="47" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7C-O7-oME">
+                                <rect key="frame" x="173" y="373" width="47" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxx-Fy-ii5">
-                                <rect key="frame" x="21" y="673" width="350" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMd-GW-nMh">
+                                <rect key="frame" x="21" y="690" width="350" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -137,21 +137,20 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="homeButtonPressed:" destination="6L2-6m-56I" eventType="touchUpInside" id="8Gi-AZ-cgj"/>
+                                    <action selector="homeButtonPressed:" destination="rQ1-zk-XWP" eventType="touchUpInside" id="4dA-b4-J6X"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="QOG-Dv-Ayw"/>
+                        <viewLayoutGuide key="safeArea" id="hgR-q9-Ocx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="homeButtonPressed" destination="Vxx-Fy-ii5" id="lBS-8k-fVa"/>
-                        <outlet property="resultLabelValue" destination="zuR-lp-RWs" id="FJz-Sw-Q6K"/>
+                        <outlet property="resultLabelValue" destination="F7C-O7-oME" id="0qC-T0-kvK"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Rh-hU-vYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIF-UO-KxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="18"/>
+            <point key="canvasLocation" x="998" y="4"/>
         </scene>
     </scenes>
     <resources>
