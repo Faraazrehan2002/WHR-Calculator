@@ -93,6 +93,7 @@
                         <outlet property="hipValueSlider" destination="f1J-oL-if8" id="FYb-8j-90Z"/>
                         <outlet property="waistLabelValue" destination="4wa-ay-o4N" id="m38-nh-SFO"/>
                         <outlet property="waistValueSlider" destination="xKH-2x-9f8" id="q5c-64-mY9"/>
+                        <segue destination="6L2-6m-56I" kind="presentation" id="zSo-C3-pPm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,7 +105,7 @@
             <objects>
                 <viewController id="6L2-6m-56I" customClass="ResultViewController" customModule="WHR_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hEJ-tA-8AT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Waist to Hip Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S81-gI-e40">
