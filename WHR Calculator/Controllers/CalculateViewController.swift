@@ -7,7 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
+    
+    
+    var whrValue = "0.0"
 
     @IBOutlet weak var waistValueSlider: UISlider!
     
@@ -38,7 +41,12 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func WHRButtonCalculate(_ sender: Any) {
+    @IBAction func WHRButtonCalculate(_ sender: UIButton) {
+        
+        let whr = waistValueSlider.value/hipValueSlider.value
+        
+        whrValue = String(format: "%1.1f", whr)
+        
     }
     
 }
